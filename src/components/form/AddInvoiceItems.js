@@ -66,7 +66,7 @@ export default function AddInvoiceItems(props) {
                             type='number'
                             min='0'
                             name='price'
-                            placeholder='$ 0.00'
+                            placeholder='€ 0.00'
                             value={item.price || ''}
                             onChange={handleItem}
                         ></input>
@@ -76,8 +76,8 @@ export default function AddInvoiceItems(props) {
                         <input
                             type='number'
                             name='total'
-                            placeholder='$ 0.00'
-                            value={item.quantity * item.price || ''}
+                            placeholder='€ 0.00'
+                            value={item.total || ''}
                             onChange={handleItem}
 
                         ></input>

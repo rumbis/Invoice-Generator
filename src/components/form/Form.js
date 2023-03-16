@@ -291,8 +291,8 @@ export default function Form(props) {
                 <div className='flex-table row' >
                   <div className='flex-row first'>{item.description}</div>
                   <div className='flex-row'>{item.quantity}</div>
-                  <div className='flex-row'>$ {item.price}</div>
-                  <div className='flex-row'>$ {item.total}</div>
+                  <div className='flex-row'>€ {item.price}</div>
+                  <div className='flex-row'>€ {item.total}</div>
 
                   <div className='btn-container'>
                     <button className='edit-btn' onClick={() => handleEdit(index)}>
@@ -310,7 +310,7 @@ export default function Form(props) {
 
           <div className='invoice-total'>
             <div>
-              <p><b>Total:</b>$ {totals.total}</p>
+              <p><b>Total:</b>€ {totals.total}</p>
             </div>
           </div>
         </div>
@@ -370,7 +370,7 @@ export default function Form(props) {
       <h3>Notes</h3>
       <label htmlFor='notes'>Additional notes</label>
       <textarea
-        id='notes' 
+        id='notes'
         className='client-notes'
         placeholder='Additional notes for the client'
         value={notes || ''}
@@ -382,7 +382,7 @@ export default function Form(props) {
         onClick={showPreview}
       >Preview Invoice</button>
 
-        
+
     </div>
 
   )
