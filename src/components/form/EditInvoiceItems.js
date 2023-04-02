@@ -59,7 +59,7 @@ export default function EditInvoiceItems(props) {
                             type='number'
                             name='total'
                             placeholder='$ 0.00'
-                            value={editedItem.quantity * editedItem.price || item.quantity * item.price || ''}
+                            value={editedItem.total|| item.total || ''}
                             onChange={handleEditedItem}
 
                         ></input>
@@ -73,7 +73,7 @@ export default function EditInvoiceItems(props) {
 
 
 
-            </form> 
+            </form>
         </div>
     )
 }
